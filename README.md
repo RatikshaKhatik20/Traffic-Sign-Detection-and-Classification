@@ -35,8 +35,8 @@ The [Dataset](dataset) folder contains images for training SVM models. There are
 
 The dataset is created by applying the detection phase on many videos with various parameters to mark all traffic signs and then manually separating them into their right classes.
 
-c signs.
-### 4. Installation
+
+How to run?
 Use default arguments on command prompt:
 python main.py
 
