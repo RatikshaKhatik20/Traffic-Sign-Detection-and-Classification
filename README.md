@@ -1,4 +1,4 @@
-# Traffic signs detection and classification in real time
+# Traffic signs detection and classification 
 
 ### 1. Description ###
 This project is a traffic signs detection and classification system on videos using OpenCV.
