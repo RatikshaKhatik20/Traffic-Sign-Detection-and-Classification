@@ -7,7 +7,7 @@ The detection phase uses Image Processing techniques that create contours on eac
 
 In the next phase - classification phase, a list of images are created by cropping from the original frame based on candidates' coordinate. A pre-trained SVM model will classify these images to find out which type of traffic sign they are.
 
-Currently supported traffic signs (*The name of each sign's file is corresponding to their class in SVM*):
+Currently supported traffic signs:
  ![](/images/all-signs.png)
 
 The SVM Model is trained each time the ```main.py``` called, before the detection phase but I still save the model in [data_svm.dat](data_svm.dat) to implement the model-reload function in the future to avoid retraining phase.
@@ -35,7 +35,7 @@ The [Dataset](dataset) folder contains images for training SVM models. There are
 
 The dataset is created by applying the detection phase on many videos with various parameters to mark all traffic signs and then manually separating them into their right classes.
 
-Each time run the program, the dataset can be updated by checking all generated cropped images of detected traffic signs, then find all misclassified traffic signs.
+c signs.
 ### 4. Installation
 Use default arguments on command prompt:
 python main.py
