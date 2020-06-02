@@ -9,9 +9,6 @@ In the next phase - classification phase, a list of images are created by croppi
 
 Currently supported traffic signs (*The name of each sign's file is corresponding to their class in SVM*):
  ![](/images/all-signs.png)
-Note:
-- *All signs which belong to class 8 and above are marked as **OTHERS** because a competition requires this. There is also a class 0 which are marked as non-traffic-sign*
-- *Only the **biggest** sign in the current frame is cropped and classified*
 
 The SVM Model is trained each time the ```main.py``` called, before the detection phase but I still save the model in [data_svm.dat](data_svm.dat) to implement the model-reload function in the future to avoid retraining phase.
 
@@ -45,8 +42,4 @@ python main.py
 
 ### 5. Result
 ![](images/demo.gif)
-### 6. Disadvantages
-- Static image processing, this means parameters must be updated for each video with different lighting conditions
-- The accuracy of the detection phase is not high, still, miss signs or detect wrong areas.
-- The dataset is a little bit overfitting for classification phase. 
 
